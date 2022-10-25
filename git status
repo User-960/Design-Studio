@@ -1,0 +1,17 @@
+[33mcommit 8ecb35e62b16d0c02414449ac59facd05c05a82c[m[33m ([m[1;36mHEAD -> [m[1;32mawesome-branch[m[33m)[m
+Author: Ivan <ivanvolodin960@gmail.com>
+Date:   Tue Oct 25 17:31:29 2022 +0300
+
+    Design Studio: add script
+
+[33mcommit f988449da67ddf42a05832e8f13ef98c97c5ad20[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Ivan <ivanvolodin960@gmail.com>
+Date:   Tue Oct 25 16:32:58 2022 +0300
+
+    Design Studio: init js + move footer into <body>
+
+[33mcommit f11170fc20072f2259177ce5e2d031630537c29f[m
+Author: Ivan <ivanvolodin960@gmail.com>
+Date:   Mon Oct 10 00:00:24 2022 +0300
+
+    Design-Studio: init project
