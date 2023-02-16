@@ -11,6 +11,27 @@ body {
   color: #FFFFFF;
 }
 
+.block-title {
+  font-family: $title-font;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.camera {
+  margin-left: 9.5px;
+  margin-right: 7.7px;
+}
+
+.symbol {
+  width: 114px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+}
+
 .header {
   background: $color-background-black;
   &__inner {
@@ -46,22 +67,18 @@ body {
 .menu {
   margin: 36px 0 36px 95px;
   width: 581px;
-
   &__list {
     display: flex;
   }
-
   &__item+&__item {
     margin-left: 47px;
   }
-
   &__link {
     color: inherit;
     font-size: 11px;
     line-height: 15px;
     @extend %transition-title;
   }
-
   &__link:hover {
     color: $color-gold;
   }
@@ -70,7 +87,6 @@ body {
 .phone {
   margin: 37px 0px 30px 67px;
   width: 126px;
-
   &-link {
     color: $color-gold;
     text-align: right;
@@ -97,7 +113,6 @@ body {
   background-image: url(../images/main-photo.jpg);
   height: 707px;
   position: relative;
-
   &-overlay {
     content: "";
     position: absolute;
@@ -107,16 +122,13 @@ body {
     right: 0;
     background: rgba(0, 0, 0, 0.7);
   }
-
   &__inner-overlay {
     position: relative;
     z-index: 1;
   }
-
   &__inner {
     padding: 194px 630px 208px 134px;
   }
-
   &__title {
     font-family: $title-font;
     font-size: 40px;
@@ -124,18 +136,15 @@ body {
     width: 600px;
     text-transform: uppercase;
   }
-
   &__span {
     color: $color-gold;
   }
-
   &__text {
     margin-top: 19px;
     font-size: 22px;
     line-height: 36px;
     width: 514px;
   }
-
   &__btn {
     margin-top: 41px;
     width: 207px;
@@ -147,7 +156,6 @@ body {
     padding: 19px 22px;
     @extend %btn-model
   }
-
   &__btn-solid {
     border: 1px solid #FFFFFF;
     background-color: rgba(0, 0, 0, 0);
@@ -158,13 +166,11 @@ body {
 .info {
   background-color: $color-background-black;
   padding-bottom: 414px;
-
   &__inner {
     display: flex;
     padding-left: 134px;
     padding-right: 140px;
   }
-
   &__slider-descrip {
     width: 442px;
     position: relative;
@@ -174,7 +180,6 @@ body {
 .info__title {
   display: flex;
   align-items: center;
-
   &-text {
     font-size: 27px;
     line-height: 37.42px;
@@ -184,14 +189,12 @@ body {
     font-family: $title-font;
     text-transform: uppercase;
   }
-
   &-line {
     position: absolute;
     color: $color-gold;
     left: 161px;
     top: 228px;
   }
-
   &-info {
     font-size: 14px;
     line-height: 36.73px;
@@ -209,7 +212,6 @@ body {
     margin-bottom: 79.64px;
     position: relative;
   }
-
   &__card-title {
     font-size: 18px;
     line-height: 24.95px;
@@ -218,18 +220,15 @@ body {
     font-family: $title-font;
     text-transform: uppercase;
   }
-
   &__card-text {
     font-size: 13px;
     line-height: 21.28px;
     position: absolute;
     opacity: 0;
   }
-
   &__card-text.active {
     opacity: 1;
   }
-
   &__card-text-active {
     width: 161px;
     height: 42px;
@@ -246,7 +245,6 @@ body {
 
 .info__slider {
   margin-left: 55px;
-
   &-nav {
     display: flex;
     align-items: center;
@@ -254,7 +252,6 @@ body {
     width: 205.68px;
     height: 13.28px;
   }
-
   &-arrow {
     margin: 0 29.5px 0 0;
     display: flex;
@@ -262,18 +259,15 @@ body {
     justify-content: center;
     cursor: pointer;
   }
-
   &-arrow:last-of-type {
     margin: 0 0 0 29.5px;
   }
-
   &-dots {
     width: 63.78px;
     height: 10.5px;
     display: flex;
     flex-wrap: nowrap;
   }
-
   &__dot-item {
     margin: 0 17.54px 0 0;
     background: url(../images/dots_nonactive.svg);
@@ -281,18 +275,15 @@ body {
     height: 10.4px;
     cursor: pointer;
   }
-
   &__dot-item.active {
     background: url(../images/dots_active.svg);
     width: 9.57px;
     height: 10.5px;
     margin: 0 17.54px 0 0;
   }
-
   &__dot-item:hover {
     background: url(../images/dots_active.svg);
   }
-
   &__dot-item:last-child {
     margin: 0;
   }
@@ -311,7 +302,6 @@ body {
 .slider {
   width: 679px;
   margin: 0 0 0 50px;
-
   &__title {
     font-size: 14px;
     line-height: 19.4px;
@@ -323,17 +313,14 @@ body {
     font-family: $title-font;
     @extend %transition-title;
   }
-
   &__title:hover {
     color: $color-gold;
     padding-bottom: 6.68px;
     border-bottom: 1px solid $color-gold;
   }
-
   &__title:last-child {
     margin: 0;
   }
-
   &__title.active {
     color: $color-gold;
     padding-bottom: 6.68px;
@@ -361,4 +348,106 @@ body {
 
 .info__slider__images .image.active {
   opacity: 1;
+}
+
+.control {
+  margin-top: -324px;
+  &__inner {
+    padding-left: 312px;
+    padding-right: 312px;
+  }
+  &__level {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-video {
+      position: relative;
+    }
+    &-go {
+      position: absolute;
+      top: 144px;
+      left: 335px;
+      right: 337px;
+      bottom: 145px;
+    }
+    &-overlay-image {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.8);
+      height: 434px;
+    }
+    &-overlay {
+      position: relative;
+      margin-top: 31px;
+    }
+    &-two {
+      margin-top: 62.5px;
+    }
+    &-text {
+      margin-top: 34.5px;
+      font-size: 18px;
+      line-height: 37px;
+      text-align: center;
+      color: $color-text-grey;
+      width: 681px;
+    }
+    &-box {
+      display: flex;
+    }
+    &-form+&-form {
+      margin-left: 60px;
+    }
+    &-marker {
+      display: block;
+      font-size: 13px;
+      line-height: 21px;
+      color: rgba(54, 54, 54, 0.5);
+      transform: rotate(-0.07deg);
+    }
+    &-form {
+      width: 231px;
+      height: 45px;
+      flex-direction: column;
+    }
+    &-line {
+      border: none;
+      border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+      font-size: 14px;
+      line-height: 23px;
+      color: $color-text-grey;
+      width: 231px;
+      padding-bottom: 8px;
+      margin-top: -2px;
+    }
+    &-line::placeholder {
+      color: $color-text-grey;
+      line-height: 23px;
+    }
+    &-btn {
+      @extend %btn-model;
+      width: 200px;
+      height: 51px;
+      box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+      border-radius: 2px;
+      font-size: 13px;
+      line-height: 27px;
+      margin-left: 49px;
+    }
+    &-three {
+      margin-top: 91.5px;
+    }
+    &-form-text {
+      line-height: 163.68%;
+      color: $color-text-black;
+    }
+  }
+  &__checkbox {
+    @extend %checkbox-model;
+    margin-top: 33px;
+    color: $color-text-black;
+  }
 }
