@@ -92,3 +92,65 @@ body {
   padding: 13px 0;
   @extend %btn-model;
 }
+
+.head-section {
+  background-image: url(../images/main-photo.jpg);
+  height: 707px;
+  position: relative;
+
+  &-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  &__inner-overlay {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__inner {
+    padding: 194px 630px 208px 134px;
+  }
+
+  &__title {
+    font-family: $title-font;
+    font-size: 40px;
+    line-height: 53px;
+    width: 600px;
+    text-transform: uppercase;
+  }
+
+  &__span {
+    color: $color-gold;
+  }
+
+  &__text {
+    margin-top: 19px;
+    font-size: 22px;
+    line-height: 36px;
+    width: 514px;
+  }
+
+  &__btn {
+    margin-top: 41px;
+    width: 207px;
+    height: 51px;
+    border-radius: 2px;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
+    padding: 19px 22px;
+    @extend %btn-model
+  }
+
+  &__btn-solid {
+    border: 1px solid #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+  }
+}
