@@ -4,4 +4,91 @@
 @import 'libs';
 @import 'global';
 
+body {
+  font-family: $base-font;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
 
+.header {
+  background: $color-background-black;
+  &__inner {
+    height: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+  }
+}
+
+.footer {
+  background: $color-background-black;
+  &__inner {
+    height: 133px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+  }
+}
+
+.logo {
+  width: 180px;
+  height: 10px;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $color-gold;
+  margin: 36px 0 36px 0px;
+}
+
+.menu {
+  margin: 36px 0 36px 95px;
+  width: 581px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item+&__item {
+    margin-left: 47px;
+  }
+
+  &__link {
+    color: inherit;
+    font-size: 11px;
+    line-height: 15px;
+    @extend %transition-title;
+  }
+
+  &__link:hover {
+    color: $color-gold;
+  }
+}
+
+.phone {
+  margin: 37px 0px 30px 67px;
+  width: 126px;
+
+  &-link {
+    color: $color-gold;
+    text-align: right;
+    text-decoration-line: underline;
+    font-size: 11px;
+    line-height: 15px;
+    cursor: pointer;
+  }
+}
+
+.main__btn {
+  width: 161px;
+  height: 37px;
+  border-radius: 2px;
+  font-style: italic;
+  font-size: 11px;
+  line-height: 15px;
+  margin: 24px 0px 22px 45px;
+  padding: 13px 0;
+  @extend %btn-model;
+}
