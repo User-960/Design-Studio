@@ -517,3 +517,101 @@ body {
     margin-left: -31px;
   }
 }
+
+.request {
+  &__inner {
+    display: flex;
+  }
+  &__services {
+    background-image: url(../images/Background.jpg);
+    background-repeat: no-repeat;
+    padding: 117px 71px 54px 249px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 385px;
+    margin-left: -22px;
+    margin-top: -17px;
+  }
+  &__text {
+    color: $color-text-grey;
+    margin-left: -8px;
+    margin-top: -2px;
+  }
+  &__item+&__item {
+    margin-top: 56px;
+  }
+  &__order {
+    max-width: 737px;
+    padding: 106px 100px 0px 131px;
+  }
+  &__box {
+    width: 506px;
+    height: 509px;
+    background: $color-background-black;
+    padding: 28px 49px;
+  }
+  &__title {
+    width: 297px;
+    height: 47px;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  &__form {
+    margin-top: 39px;
+    &-marker {
+      display: block;
+      font-size: 13px;
+      line-height: 21px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    &-line {
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      background: none;
+      font-size: 14px;
+      line-height: 23px;
+      width: 408px;
+      padding-bottom: 3px;
+      color: #FFFFFF;
+    }
+    &-line::placeholder {
+      color: inherit;
+      line-height: 23px;
+    }
+  }
+  &__form+&__form {
+    margin-top: 48px;
+  }
+  &__checkbox {
+    @extend %checkbox-model;
+    margin-top: 16px;
+  }
+  &__btn {
+    @extend %btn-model;
+    margin-top: 39px;
+    width: 213px;
+    height: 51px;
+    font-size: 13px;
+    line-height: 21px;
+    border-radius: 0px;
+    margin-left: 195px;
+  }
+  &__help {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+    &-text {
+      margin-left: 5px;
+      margin-top: -12px;
+      font-size: 18px;
+      line-height: 26px;
+      color: $color-gold;
+      text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    }
+  }
+}
