@@ -792,3 +792,117 @@ body {
     }
   }
 }
+
+.contacts {
+  background-image: url(../images/Background\ 03.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 256px 66px 256px;
+  }
+  &__overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+  }
+  &__inner-overlay {
+    position: relative;
+    z-index: 1;
+  }
+  &__question {
+    margin-top: -240px;
+    background: $color-text-black;
+    width: 884px;
+    height: 445px;
+    padding: 34px 182px;
+  }
+  &__box-form {
+    margin-top: 46px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__form {
+    max-width: 231px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    &-line {
+      background: none;
+      border: none;
+      border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+      font-size: 14px;
+      line-height: 23px;
+      color: $color-text-grey;
+      width: 231px;
+      padding-bottom: 8px;
+      margin-top: -2px;
+    }
+    &-marker {
+      display: block;
+      font-size: 13px;
+      line-height: 21px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    &-line::placeholder {
+      line-height: 23px;
+      color: #FFFFFF;
+    }
+    &-third-line {
+      max-width: 517px;
+    }
+  }
+  &__form:nth-child(2) {
+    margin-left: 58px;
+  }
+  &__form-third {
+    width: 517px;
+    margin-top: 48.7px;
+  }
+  &__form-third-line {
+    width: 517px;
+  }
+  &__checkbox {
+    @extend %checkbox-model;
+    text-align: center;
+    margin-top: 47px;
+  }
+  &__btn {
+    @extend %btn-model;
+    margin-top: 50px;
+    width: 200px;
+    height: 51px;
+    font-size: 13px;
+    line-height: 27px;
+    margin-left: 161px;
+    margin-right: 161px;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+  }
+  &__address {
+    font-family: $title-font;
+    width: 589px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-gold;
+    margin-top: 52px;
+  }
+  &__social-media {
+    display: flex;
+    margin-top: 26px;
+    &-link+&-link {
+      margin-left: 15px;
+    }
+  }
+  &__map {
+    margin-top: 43px;
+  }
+}
