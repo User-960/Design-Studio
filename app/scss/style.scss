@@ -615,3 +615,91 @@ body {
     }
   }
 }
+
+.interior {
+  margin-top: 243px;
+  &__inner {
+    display: flex;
+    background-image: url(../images/Background\ 02.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    height: 864px;
+  }
+  &__overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+  }
+  &__inner-overlay {
+    position: relative;
+  }
+  &__column {
+    width: 587px;
+    padding: 137px 77px 97.5px 99px;
+    z-index: 1;
+  }
+  &__title {
+    font-family: $title-font;
+    color: $color-gold;
+    font-size: 27px;
+    line-height: 37px;
+    width: 411px;
+    text-transform: uppercase;
+  }
+  &__list {
+    margin-top: 47px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 38px;
+  }
+  &__item+&__item {
+    margin-top: 16px;
+  }
+  &__link {
+    color: #FFFFFF;
+    @extend %transition-title;
+  }
+  &__link:hover {
+    color: $color-gold;
+  }
+  &__stroke {
+    visibility: hidden;
+    margin-top: -7px;
+    @extend %transition-stroke;
+  }
+  &__link:hover+&__stroke {
+    visibility: visible;
+  }
+  &__column-gallery {
+    max-width: 930px;
+    margin-right: 102px;
+    z-index: 1;
+  }
+  &__gallery {
+    display: flex;
+  }
+  &__photo-one {
+    margin-top: -40px;
+  }
+  &__photo-two {
+    margin-left: 43px;
+    margin-top: -112.5px;
+  }
+  &__photo-three {
+    margin-top: 40px;
+  }
+  &__photo-four {
+    margin-left: 43px;
+    margin-top: -322px;
+  }
+  &__img {
+    max-width: 354px;
+  }
+}
