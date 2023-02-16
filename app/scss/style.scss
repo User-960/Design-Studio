@@ -451,3 +451,69 @@ body {
     color: $color-text-black;
   }
 }
+
+.repair {
+  margin-top: 148px;
+  margin-bottom: 151px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 102px;
+    padding-right: 102px;
+  }
+  &__title-black {
+    color: #181818;
+  }
+  &__types {
+    margin-top: 31px;
+    display: flex;
+  }
+  &__type+&__type {
+    margin-left: 30px;
+  }
+  &__info {
+    width: 330px;
+    height: 286px;
+    padding: 25px 29px 49px 31px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    background: #FFFFFF;
+    margin-top: -187px;
+    position: relative;
+    top: 50px;
+    margin-left: 31px;
+    margin-right: 31px;
+  }
+  &__title {
+    font-family: $title-font;
+    font-size: 18px;
+    line-height: 25px;
+    color: $color-text-grey;
+  }
+  &__list {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 27px;
+  }
+  &__item {
+    color: $color-text-grey-light;
+    margin-left: 10px;
+  }
+  &__item::before {
+    content: "•";
+    position: relative;
+    left: -7px;
+  }
+  &__btn {
+    @extend %btn-model;
+    font-family: $title-font;
+    font-size: 18px;
+    line-height: 25px;
+    box-shadow: 5px 5px 10px;
+    width: 228px;
+    height: 54px;
+    padding: 17px 16px;
+    margin-top: 15px;
+    margin-left: -31px;
+  }
+}
