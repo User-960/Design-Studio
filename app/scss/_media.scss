@@ -747,13 +747,13 @@
       display: none;
     }
     &__photo-one::before {
-      top: 0px;
+      top: -9px;
       left: 13px;
       position: relative;
     }
     &__photo-one::after {
       position: relative;
-      top: 0px;
+      top: -9px;
       right: 13px;
     }
     &__photo-one .interior__img {
@@ -968,7 +968,7 @@
       width: 180px;
     }
     &__btn {
-      width: 270px;
+      width: 240px;
       margin-top: 20px;
     }
   }
@@ -1039,7 +1039,7 @@
   .contacts__btn,
   .control__level-form,
   .control__level-line {
-    width: 260px;
+    width: 280px;
   }
   .info__slider__images,
   .info__title-info {
