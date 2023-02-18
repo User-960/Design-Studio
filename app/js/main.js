@@ -1,3 +1,9 @@
+ /* menu for mobile */
+ $('.header__btn-menu').on('click', function () {
+    $('.menu').toggleClass('menu--open')
+  });
+
+/* slider */
 const images = [{
   url: "'images/Rostov-on-Don.png'",
   title: "Rostov-on-Don, Admiral",
