@@ -404,10 +404,11 @@
       text-align: center;
     }
     &__arrow-mobile {
+      position: absolute;
+      display: block;
       width: 50px;
       height: 50px;
       top: 0px;
-      display: block;
       z-index: 1;
     }
     &__slider__images {
@@ -420,11 +421,11 @@
     }
     &__slider-nav {
       position: absolute;
-      margin-top: -108px;
-      margin-left: 125px;
+      bottom: 102px;
+      left: 122px;
     }
     &__slider-arrow:last-of-type {
-      margin-left: 310px;
+      margin-left: 376px;
     }
   }
   .control {
@@ -716,11 +717,11 @@
       left: 0px;
     }
     &__slider-nav {
-      margin-top: -127px;
-      margin-left: 120px;
+      bottom: 130px;
+      left: 122px;
     }
     &__slider-arrow:last-of-type {
-      margin-left: 240px;
+      margin-left: 280px;
     }
     &__slider {
       margin-left: 0px;
@@ -871,10 +872,6 @@
       max-width: 340px;
       max-height: 242px;
     }
-    &__slider-nav {
-      margin-top: -137px;
-      margin-left: 120px;
-    }
     &__arrow-mobile {
       width: 36px;
       height: 36px;
@@ -905,15 +902,31 @@
       width: 322px;
     }
     &__slider-nav {
-      margin-left: 84px;
+      bottom: 252px;
+      left: 60px;
     }
     &__slider__images {
       max-width: 310px;
     }
     &__feature {
-      grid-template-columns: 100px 140px;
-      margin-left: 25px;
+      margin-left: 10px;
+      top: 270px;
+      width: 260px;
+      grid-template-columns: 160px;
+      grid-template-rows: 43px 43px 43px 43px;
     }
+    &__slider__images .image {
+      top: -120px;
+    }
+  }
+  .interior__title {
+    max-width: 340px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .contacts__checkbox {
+    margin-top: 45px;
+    width: 180px;
   }
   .contacts__map {
     width: 360px;
@@ -960,14 +973,12 @@
     }
   }
   .info {
-    &__feature {
-      top: 270px;
-      width: 260px;
-      grid-template-columns: 200px;
-      grid-template-rows: 43px 43px 43px 43px;
+    &__slider-nav {
+      bottom: 252px;
+      left: 32px;
     }
-    &__slider__images .image {
-      top: -120px;
+    &__slider-arrow:last-of-type {
+      margin-left: 180px;
     }
   }
   .contacts {
