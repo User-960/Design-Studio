@@ -379,9 +379,7 @@
       padding-left: 17px;
       padding-right: 17px;
     }
-    &__level-video {
-      max-width: 452px;
-    }
+    &__level-overlay,
     &__level-overlay-image {
       max-width: 452px;
       height: 241px;
@@ -389,9 +387,6 @@
     &__level-go {
       width: 75px;
       height: 75px;
-      object-fit: cover;
-      top: 83px;
-      left: 189px;
     }
     &__level-text {
       color: #FFFFFF;
@@ -763,19 +758,10 @@
     }
   }
   .control {
-    &__level-video {
-      max-width: 340px;
-    }
+    &__level-overlay,
     &__level-overlay-image {
       max-width: 340px;
       height: 181px;
-    }
-    &__level-go {
-      width: 60px;
-      height: 60px;
-      object-fit: cover;
-      top: 60px;
-      left: 140px;
     }
   }
   .review {

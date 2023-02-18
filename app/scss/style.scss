@@ -365,10 +365,10 @@ body {
     }
     &-go {
       position: absolute;
-      top: 144px;
-      left: 335px;
-      right: 337px;
-      bottom: 145px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
     }
     &-overlay-image {
       content: "";
@@ -381,6 +381,8 @@ body {
       height: 434px;
     }
     &-overlay {
+      width: 820px;
+      height: 434px;
       position: relative;
       margin-top: 31px;
     }

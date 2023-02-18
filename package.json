@@ -19,5 +19,8 @@
     "gulp-uglify-es": "^3.0.0",
     "jquery": "^3.6.3",
     "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7"
   }
 }
