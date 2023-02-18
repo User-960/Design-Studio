@@ -830,6 +830,9 @@
     padding-left: 8px;
   }
   .info {
+    &__inner {
+      padding: 0px;
+    }
     &__slider-descrip {
       width: 322px;
     }
@@ -851,6 +854,10 @@
   .contacts__btn {
     width: 280px;
   }
+  .contacts__form,
+  .contacts__form-line {
+    width: 300px;
+  }
   .header__inner,
   .footer__inner {
     padding-left: 10px;
@@ -871,6 +878,7 @@
   .head-section {
     &__inner {
       padding-left: 0px;
+      padding-right: 0px;
     }
     &__title {
       width: 240px;
@@ -883,24 +891,85 @@
       margin-top: 20px;
     }
   }
-  .contacts__map {
-    width: 300px;
+  .info {
+    &__feature {
+      top: 270px;
+      width: 260px;
+      grid-template-columns: 200px;
+      grid-template-rows: 43px 43px 43px 43px;
+    }
+    &__slider__images .image {
+      top: -120px;
+    }
+  }
+  .contacts {
+    &__inner {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    &__map {
+      width: 300px;
+    }
   }
   .interior__column-gallery {
     padding-right: 0px; 
     padding-left: 0px;
   }
-  .info__feature {
-    grid-template-columns: 100px 110px;
+  .info__slider-descrip,
+  .interior__column-gallery {
+    max-width: 270px;
   }
-  .repair__inner {
-    padding-left: 0px; 
-    padding-right: 0px;
+  .repair {
+    &__inner {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    &__img {
+      max-width: 280px;
+    }
+    &__type {
+      max-width: 280px;
+    }
+    &__info {
+      padding: 25px 16px 49px 16px;
+      width: 240px;
+      top: 100px;
+    }
+    &__btn {
+      margin-left: -16px;
+    }
+  }
+  .control {
+    &__inner {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    &__level-text,
+    &__level-btn,
+    &__level-overlay,
+    &__level-overlay-image {
+      max-width: 260px;
+    }
+    &__checkbox {
+      width: 250px;
+      left: 0;
+    }
+  }
+  .contacts__form,
+  .contacts__form-line,
+  .contacts__btn,
+  .control__level-form,
+  .control__level-line {
+    width: 260px;
+  }
+  .info__slider__images,
+  .info__title-info {
+    max-width: 260px;
   }
 }
 
 @media (max-width: 320px) {
   .contacts__map {
-    width: 280px;
+    width: 270px;
   }
 }
