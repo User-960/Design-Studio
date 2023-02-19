@@ -1,4 +1,4 @@
-# Blog-project
+# Design-Studio
   The Design-Studio is being developed for learning the assembly of the project.
   The main purpose of the project is to write a slider on native JavaScript.
   
@@ -17,6 +17,10 @@
 ### Installing dependencies:
     cd Design-Studio
     npm install
+
+    or
+
+    yarn install
 ***
 
 ### Build project:
