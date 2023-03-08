@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-dev": "gulp",
+    "build-prod": "gulp build",
+    "clear": "rd /s /q dist"
   },
   "author": "Ivan Volodin",
   "license": "ISC",

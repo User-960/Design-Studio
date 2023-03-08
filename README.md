@@ -1,8 +1,8 @@
 # Design-Studio
-  The Design-Studio is being developed for learning the assembly of the project.
-  The main purpose of the project is to write a slider on native JavaScript.
-  
-  What is used:
+
+The Design-Studio is being developed for learning the assembly of the project. The main purpose of the project is to write a slider on native JavaScript.
+
+What is used:
 
 - Programming languages: HTML, CSS, JavaScript;
 - Task runner: Gulp;
@@ -10,26 +10,34 @@
 - Libraries: Fancyapps;
 - Extra: Google maps;
 
-## Run the commands to start the application:
-### Clone a repository:
-    git clone https://github.com/User-960/Design-Studio.git
-***
-### Installing dependencies:
-    cd Design-Studio
-    npm install
+To clone repository
 
-    or
+```shell
+git clone https://github.com/User-960/Design-Studio.git
+```
 
-    yarn install
-***
+To install packages, use the command
 
-### Build project:
-    gulp build
-***
+```shell
+npm install
+```
 
-\* After project build: run the file `dist/index.html` in browser
-***
+## Commands
 
-### Enable developer mode:
-    gulp
-*** 
+### Building a project without optimization and launch on server
+
+```shell
+npm run build-dev
+```
+
+### Building a project with optimization
+
+```shell
+npm run build-prod
+```
+
+### Cleaning up the dist folder
+
+```shell
+npm run clear
+```
